@@ -1763,6 +1763,7 @@
 	.inner {
 		max-width: 75em;
 		margin: 0 auto;
+		align-self: center;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -1871,7 +1872,7 @@
 		margin-top: -0.6em;
 	}
 
-/* Flex */
+/* Flex 
 
 	.flex {
 		display: -ms-flexbox;
@@ -1891,18 +1892,17 @@
 		flex-wrap: wrap;
 		width: 100%;
 	}
-
+*/
 		.flex.flex-2 {
 			-moz-justify-content: space-between;
 			-webkit-justify-content: space-between;
 			-ms-justify-content: space-between;
 			justify-content: space-between;
+			align-self: center;
+			align-items: center;
 		}
 
-			.flex.flex-2 article {
-				width: 50%;
-			}
-
+			
 		@media screen and (max-width: 980px) {
 
 			.flex.flex-2 article {
@@ -1923,6 +1923,8 @@
 			}
 
 		}
+		
+	
 
 /* Form */
 
@@ -2185,6 +2187,7 @@
 				.box.person .image img {
 					max-width: 100%;
 				}
+				
 
 /* Icon */
 
@@ -3157,3 +3160,79 @@
 			}
 
 		}
+
+/* new lines added....*/
+.AboutImage {
+	height: 30%;
+	width: 30%;
+	align-content: center;
+	image-orientation: flip;
+	-webkit-border-image: 10%;
+}
+
+.Process {
+	display: -ms-flexbox;
+	-ms-flex-wrap: wrap;
+	-ms-flex-pack: justify;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	
+}
+.WeDo {
+
+	margin-top: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+	.WeDo header{
+		margin-top: 150px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	}
+
+
+/* about us kw page ka aand*/
+
+#banner23 {
+	padding: 8em 0 9em 0;
+	background-image: url(../../images/about-us.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+	position: relative;
+	color: white;
+	background-color: #4bae77;
+	opacity: 52%;
+}
+
+#photoIcon img {
+	max-height: 100px;
+	max-width: 100px;
+}
+
+.inner .AboutImage img {
+	align-self: center;
+	vertical-align: -webkit-baseline-middle;
+	padding-left: 200px;
+	padding-bottom: 40px;
+}
