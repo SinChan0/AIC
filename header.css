@@ -83,11 +83,11 @@ ul{
 }
  .aboutus,.containers{
   overflow:hidden;
-  width:98%;
-  background:black;
+  width:100%;
+  background:rgb(173, 173, 173);
   margin:10px;
   padding:10px 0px;
-  margin-right:5px;
+  border-radius:12px;
   }
   .aboutus,.containers ul
   {
