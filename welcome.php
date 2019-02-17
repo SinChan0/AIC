@@ -148,7 +148,6 @@ else
   </div>
 </div>
 </div>
-
 <div style="display:block;background:blue"><h2 style="text-align:center"> <span class="well"style="display:block width:50%">About us</span></h2><a style="margin-left:90%"></h2></a></div>
 <div class="aboutus">
 <ul>
@@ -169,6 +168,7 @@ performance based.</p></div></div></li>
 <div><p class="well ts">Global</p></div>
 <div><p class="re">The platform gives a global reach to both potential startups and potential
 investors/mentors</p></div></li></div>
+
 
 </body>
 	</body>
