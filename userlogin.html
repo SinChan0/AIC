@@ -1,0 +1,70 @@
+<!doctype.html>
+<html>
+<head>
+<title>Sign up</title>
+<meta charset="utf-8">
+  <link rel="stylesheet" href="header.css">
+		  <link rel="stylesheet" href="form.css">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <style>
+function validate()
+{
+  var result =true;
+  var email=document.getElementsByName("email")[0].value;
+  var atindex=email.indexOf('@');
+  vat dotindex=email.lastindexOf('.');
+  if(atindex<1 || dotindex >email.length-2||dotindex-atindex<3)
+  {
+  result=false;
+  }
+  return(result);
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+			<div class="header">
+  <a class="logo">Incubation Center</a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+	<div class="zx active"><a  class="active">login</a>
+	  	     <ul class="cv">
+	       <li ><a href="mentorsignin.php">Mentor</a></li>
+	        <li><a href="usersignin.php">startup</a></li>
+			</ul></div>
+			  
+  </div>
+  </div>
+<div class="we">
+<div   style="margin-left:auto;margin-right:auto">
+<form action="useradd.php"method="post"onsubmit="validate()">
+<table >
+<div class="well"><h3 ><a style="text-align:center;">USER Sign up</a></h3>
+<div>
+<div ><tr><td>StartUp Name:</td></tr><tr><td ><input type="text" name="startup_name" placeholder="company name"class="from-plain-text" required></td></tr></div>
+<div ><tr><td>Owner Name:</td></tr><tr><td ><input type="text" name="owner_name"placeholder="Owner name"required></td></tr></div>
+<div ><tr><td>email:</td></tr><tr><td ><input type="email" name="email"placeholder="example@gmail.com"required></td></tr></div>
+<div ><tr><td>Mobile No.:+91</td></tr><tr><td><input type="number" placeholder="0123456789"name="mobileno"style="width:100%"required size="10"></td></tr></div>
+<div ><tr><td>Area:</td></tr><tr><td><input type="text" name="area"style="width:100%"placeholder="city,town"required size="10"></td></tr></div>
+<div ><tr><td>sex:  <input type="radio" name="sex" value="male">Male<input type="radio" name="sex" value="Female" checked>Female</td></tr></div>
+<div ><tr><td>description</td></tr><tr><td><textarea placeholder="describe your company"type="text" name="description" cols="20" rows="5"style="width:100%"required></textarea></td></tr></div>
+<div ><tr><td>Username:</td></tr><tr><td ><input type="text" placeholder="username"name="username"required ></td></tr></div>
+<div ><tr><td>Password:</td></tr><tr><td ><input type="password"placeholder="password" name="password"style="width:100%"required></td></tr></div>
+<div ><tr><td>confirm password:</td></tr><tr><td ><input placeholder="password"type="password"required></td></tr></div>
+<div ><tr><td>is your company DIPP register</tr></div></td>
+<div><tr><td><input type="radio" name="DIPP" value="yes">yes<input type="radio" name="DIPP" value="No" checked>No</td></tr></div>
+
+<div ><tr><td><input type="submit"></td></tr></div>
+</table>
+</tr></td>
+</form>
+</div>
+<h3 ><a href="usersignin.php" style="text-align:center;">Already a member sign here</a></h3>
+</div>
+</body>
+</html>

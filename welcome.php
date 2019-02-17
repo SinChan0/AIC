@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION["user"])){
+}
+else
+{
+	header("location:mentorsignin.php");
+}
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -19,10 +28,10 @@
     <a class="active" href="index.html">Home</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-	<div class="zx"><a >login</a>
+	<div class="zx"><a ><?php echo"".$_SESSION["user"]."";?></a>
 	  	     <ul class="cv">
-	       <li ><a href="mentorsignin.php">Mentor</a></li>
-	        <li><a href="usersignin.php">startup</a></li>
+	       <li ><a href="mentorsignin.php">Profile</a></li>
+		   <li ><a><?php echo '<a href="logout.php?logout">logout</a>';?></a></li>
 			</ul></div>
 			  
   </div>
@@ -99,19 +108,67 @@
   </ul>
 </div>
 </div>
+<div style="display:block;background:blue"><h2 style="text-align:center"> <span class="well"style="display:block width:50%">Milestone</span></h2><a style="margin-left:90%"> <span   data-toggle="collapse" data-target="#demo1"class=" btn btn-default glyphicon glyphicon-triangle-bottom"></span></h2></a></div>
+<div id="demo1"class=" containers collapse"><div class="timeline">
+  <div class="contai left">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="contai right">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="contai left">
+    <div class="content">
+      <h2>2015</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="contai right">
+    <div class="content">
+      <h2>2012</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="contai left">
+    <div class="content">
+      <h2>2011</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+  <div class="contai right">
+    <div class="content">
+      <h2>2007</h2>
+      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+    </div>
+  </div>
+</div>
+</div>
+
 <div style="display:block;background:blue"><h2 style="text-align:center"> <span class="well"style="display:block width:50%">About us</span></h2><a style="margin-left:90%"></h2></a></div>
 <div class="aboutus">
 <ul>
   <li><div >
    <img src="https://www.bapco.org.uk/media/pages/mission.png.742x400_q85_crop.png"class="img-thumbnail">
    <div><p class="gly"><span style="font-size:6em"class="glyphicon glyphicon-dashboard"></span></p><div>
-<div><p class="well ts">Our Mission</p></div></div></li>
+<div><p class="well ts">Our Mission</p></div>
+<div><p class="re">To reach out to each and every group of bright individuals 
+developing a startup out there and making sure they get the right mentoring</p></div></div></li>
 	 <li><div >  <img src="https://static1.squarespace.com/static/5372798ee4b0f8eee60b20a7/t/545c33b8e4b00403fdcecb17/1529514887611/vision.jpg?format=1500w" class="img-thumbnail">
  <div><p class="gly"><span style="font-size:6em"class="glyphicon glyphicon-eye-open"></span></p><div>
- <div><p class="well ts">Vision</p></div></div></li>
+ <div><p class="well ts">Vision</p></div>
+ <div><p class="re">Reaching our vision by creating a common platform for both startups and
+investors/mentors. The platform for startups will be dynamic and solely 
+performance based.</p></div></div></li>
 	  <li> <div ><img src="https://www.hertz-kompressoren.com/mp-include/uploads/2017/04/vision.png"  class="img-thumbnail">
 </div> <div><p class="gly"><span style="font-size:6em"class="glyphicon glyphicon-globe"></span></p><div>
-<div><p class="well ts">Global</p></div></li></div>
+<div><p class="well ts">Global</p></div>
+<div><p class="re">The platform gives a global reach to both potential startups and potential
+investors/mentors</p></div></li></div>
 
 </body>
 	</body>

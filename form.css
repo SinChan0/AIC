@@ -1,0 +1,38 @@
+h3
+{
+	
+	color:white;
+	background-color:black;
+	text-align:center;
+	display:block;
+	opacity:.8;
+}
+table{
+	padding:10px;
+	border:3px solid navy;
+	margin-left:auto;
+	margin-right:auto;
+	background:white;
+}
+table tr td:hover
+{
+	background-color:lightgreen;
+	opacity:.6;
+}
+.we
+{
+	padding:3px;
+	border:3px solid navy;
+	width:300px;
+	background-image:url("pyi/concept.jpg");
+	margin-left:auto;margin-right:auto;
+	background-position:center;
+	border-radius:3px 3px 0px 0px;
+}
+body
+{
+	background-image:url("pyi/12.jpg");
+	background-size:cover;
+	opacity:.8;
+	
+}

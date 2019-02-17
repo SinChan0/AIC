@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<title>Sign in</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="form.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body>
+<div class="we">
+<?php
+  if((@$_GET["Empty"])==true)
+{	
+?>
+<?php echo$_GET["Empty"]?>
+<?php
+}
+?>
+<?php
+if((@$_GET["Invalid"])==true)
+{	
+?>
+<?php echo $_GET["Invalid"] ?>
+<?php
+}
+?>
+<div   style="margin-left:auto;margin-right:auto">
+<form action="validate.php"method="post">
+<table >
+<div class="well"><h3 ><a style="text-align:center;">Mentor Login</a></h3>
+<div>
+<div ><tr><td>Username:</td></tr><tr><td ><input type="text" name="username"required></td></tr></div>
+<div ><tr><td>Password:</td></tr><tr><td ><input type="password" name="password"style="width:100%"required></td></tr></div>
+<div ><tr><td><button type="submit" name="login">login</button></td></tr></div>
+</table>
+</tr></td>
+</form>
+</div>
+<h3 ><a href="mentorlogin.php" style="text-align:center;">Already a member sign up</a></h3>
+</div>
+</body>
+</html>
